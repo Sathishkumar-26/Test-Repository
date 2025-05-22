@@ -1,1 +1,6955 @@
 
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
+version: 1.0
+stages:
+- stage1
+- stage2
+jobs:
+  clonejob1:
+    description: repository cloning job
+    type: hacksaw
+    parameters: 
+      integration: 
+      buildZipName: 
+      buildJobUrl: 
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    stage: stage1
+    timeout: 60
+    priority: major
+    parameters:
+      branch: main
+  SDjob2:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+      gridEdited: true
+  SDjob1:
+    description: build project using ant
+    type: sd
+    stage: stage2
+    timeout: 60
+    priority: major
+    parameters:
+      integration: Integ Codemine 01
+      region: CT
+      datacenter: CT1
+      buildStage: production
+      buildJobUrl: $VAR01
+      buildZipName: ZohoCodeMine.zip
+      parallelProducts:
+      - CODEMINE_KAFKA
+      subGrids:
+      - GAC
+      buildOptions:
+        staticNeeded: 'true'
+        iastJarNeeded: 'true'
+      gridEdited: true
